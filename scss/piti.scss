@@ -1,10 +1,13 @@
 /*!
- * Site Piti. Start Bootstrap - Modern Business (https://startbootstrap.com/templates/modern-business)
+ * Site Piti. Bootstrap - Modern Business (https://startbootstrap.com/templates/modern-business)
  * Copyright 2020 JOG
   */
 
+$color1:#6495ed;
+
+
 .azul {
-	color: #6495ed;
+	color: $color1;
 	text-decoration: none;
 	background-color: transparent;
 }
@@ -13,5 +16,5 @@
   font-size: 2rem;
   font-weight: 300;
   line-height: 1.2;
-  color: #6495ed;
+  color: $color1;
 }
