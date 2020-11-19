@@ -18,3 +18,20 @@ $color1:#6495ed;
   line-height: 1.2;
   color: $color1;
 }
+
+// Mixins
+@mixin cuadrado ($fondo, $ancho:200px){
+  background-color:$fondo;
+  width: $ancho;
+  height: 200px;
+  margin-top: 5px;
+  padding: 10px;
+}
+
+.cuadradro1{
+  @include cuadrado(#6495ed, 300px);
+}
+
+.cuadradro2{
+  @include cuadrado(#676d77, 600px);
+}
