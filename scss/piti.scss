@@ -5,17 +5,6 @@
 
 $color1:#6495ed;
 
-.blanc {
-  color: #fcfcfd;
-	text-decoration: none;
-	background-color: transparent;
-}
-.titol {
-	color: $color1;
-	text-decoration: none;
-	background-color: transparent;
-}
-
 .precio {
   font-size: 2rem;
   font-weight: 300;
@@ -24,18 +13,16 @@ $color1:#6495ed;
 }
 
 // Mixins
-@mixin cuadrado ($fondo, $ancho:200px){
-  background-color:$fondo;
-  width: $ancho;
-  height: 200px;
-  margin-top: 5px;
-  padding: 10px;
+@mixin texto($color:$color1){
+  color:$color;
+	text-decoration: none;
+	background-color: transparent;
 }
 
-.cuadradro1{
-  @include cuadrado(#6495ed, 300px);
+.titol{
+  @include texto();
 }
 
-.cuadradro2{
-  @include cuadrado(#676d77, 600px);
+.blanc{
+  @include texto(#fff);
 }
